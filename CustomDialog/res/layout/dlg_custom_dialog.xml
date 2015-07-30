@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dlg_container"
+    android:layout_width="wrap_content"
+    android:layout_height="240dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog" >
+
+    <TextView
+        android:id="@+id/tv_dlg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="@string/tv_dlg_title" />
+
+    <TextView
+        android:id="@+id/tv_dlg_flyup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dlg_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:clickable="true"
+        android:text="@string/tv_fly_up" />
+
+    <TextView
+        android:id="@+id/tv_dlg_flydown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dlg_flyup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:clickable="true"
+        android:text="@string/tv_fly_down" />
+    
+    <ImageView
+        android:id="@+id/iv_small_plane"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/plane" />
+
+</RelativeLayout>

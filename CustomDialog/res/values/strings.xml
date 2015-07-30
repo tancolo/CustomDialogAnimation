@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CustomDialog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_popup_dlg">对话框</string>
+    <string name="tv_pop_dlg">弹出对话框!</string>
+    <string name="tv_fly_up">动画fly up</string>
+    <string name="tv_fly_down">动画fly down</string>
+    <string name="tv_dlg_title">自定义Dlg以及在其中的动画</string>
+
+</resources>
