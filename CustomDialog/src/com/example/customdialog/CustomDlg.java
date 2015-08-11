@@ -7,7 +7,7 @@
  * 创建时间: 
  * 修改人: 
  * 修改时间: 
- * 备注: 
+ * 备注: 自定义对话框中实现属性动画
  *
  * @version 
  */
@@ -180,13 +180,13 @@ public class CustomDlg extends Dialog {
 
 		valueAnimator = ValueAnimator.ofObject(new PlaneEvaluator(type), new PointF(0, 0), new PointF(width, height));
 
-		valueAnimator.setDuration(800);
+		valueAnimator.setDuration(2000);
 		valueAnimator.addUpdateListener(new AnimatorUpdateListener() {
 			@Override
 			public void onAnimationUpdate(ValueAnimator animation) {
 				PointF pointF = (PointF) animation.getAnimatedValue();
 				//动画超出屏幕后需要取消动画，然后在cancel监听中做相关处理
-				if (valueAnimator.getCurrentPlayTime() > 700 && valueAnimator.isRunning()) {
+				if (valueAnimator.getCurrentPlayTime() > 1500 && valueAnimator.isRunning()) {
 					valueAnimator.cancel();
 				}
 				mIvPlane.setX(pointF.x);
@@ -203,9 +203,7 @@ public class CustomDlg extends Dialog {
 				mIvPlane.setVisibility(View.INVISIBLE);
 				customDialog.dismiss();
 
-				if (planeType == TYPE_UP) {//up 弹出应用市场
-
-				}//进入onAnimationCancel就已经执行了消失操作, 无需else
+				//do something 
 			}
 		});
 
